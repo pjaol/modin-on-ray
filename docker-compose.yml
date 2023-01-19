@@ -6,6 +6,7 @@ services:
     shm_size: 1.2g
     ports:
       - 6379
+      - 8076
   worker: 
     image: ray-modin
     command: ray start --block --address=head:6379
