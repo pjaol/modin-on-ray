@@ -1,2 +1,2 @@
 FROM rayproject/ray
-RUN pip install modin
+RUN pip install modin[all]

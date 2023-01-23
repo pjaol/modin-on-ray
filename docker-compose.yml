@@ -2,11 +2,12 @@ version: "3.9"
 services:
   head:
     image: ray-modin #rayproject/ray
-    command: ray start --head --block --port=6379 --object-manager-port=8076
+    command: ray start --head --block --port=6379 --object-manager-port=8076 --dashboard-host 0.0.0.0
     shm_size: 1.2g
     ports:
       - 6379
       - 8076
+      - 8265:8265
   worker: 
     image: ray-modin
     command: ray start --block --address=head:6379
