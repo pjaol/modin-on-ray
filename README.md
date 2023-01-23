@@ -1,4 +1,12 @@
 # Modin on ray
+- [Modin on ray](#modin-on-ray)
+  - [Building the image](#building-the-image)
+  - [Running](#running)
+    - [Scaling out more](#scaling-out-more)
+
+
+This is a companion repo to an article scaling python dataframes beyond memory with modin
+https://medium.com/@pjaol/scaling-python-dataframes-beyond-memory-with-modin-30cbb28d6613
 
 ## Building the image
 This is based on ray project image, however to use something like modin on ray you have to build an image with your desired modules installed. 
